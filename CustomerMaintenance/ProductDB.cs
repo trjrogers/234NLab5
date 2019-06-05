@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using CustomerMaintenance;
 
-namespace productMaintenance
+namespace CustomerMaintenance
 {
     public class ProductDB
     {

@@ -58,3 +58,7 @@ C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\obj\Debug\CustomerMaintenance.cs
 C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\obj\Debug\CustomerMaintenance.csproj.CoreCompileInputs.cache
 C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\obj\Debug\CustomerMaintenance.exe
 C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\obj\Debug\CustomerMaintenance.pdb
+C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\bin\Debug\nunit.framework.dll
+C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\bin\Debug\nunit.framework.pdb
+C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\bin\Debug\nunit.framework.xml
+C:\rogerst\S19\CS 234N\Lab5\CustomerMaintenance\obj\Debug\CustomerMaintenance.csproj.CopyComplete
