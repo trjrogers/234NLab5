@@ -10,6 +10,9 @@ namespace CustomerMaintenance
 {
     public class CustomerDB
     {
+        // Instantiate connection to MMABooksDB
+        // Write selectStatement that retrieves record from Customers where CustomerID equal to id that was passed into method
+        // Instantiate SqlCommand object using selectStatement at connection
         public static Customer GetCustomer(int customerID)
         {
             SqlConnection connection = MMABooksDB.GetConnection();
@@ -21,6 +24,7 @@ namespace CustomerMaintenance
                 new SqlCommand(selectStatement, connection);
             selectCommand.Parameters.AddWithValue("@CustomerID", customerID);
 
+            // tries to run sql command
             try
             {
                 connection.Open();
@@ -52,6 +56,7 @@ namespace CustomerMaintenance
             }
         }
 
+        // Update statement that updates column values based on the newCustomer object passed in
         public static bool UpdateCustomer(Customer oldCustomer,
         Customer newCustomer)
         {
@@ -112,6 +117,7 @@ namespace CustomerMaintenance
             }
         }
 
+        // Insert sql statement method
         public static int AddCustomer(Customer customer)
         {
             SqlConnection connection = MMABooksDB.GetConnection();
@@ -152,6 +158,7 @@ namespace CustomerMaintenance
             }
         }
 
+        // Delete only if all fields match specified values
         public static bool DeleteCustomer(Customer customer)
         {
             SqlConnection connection = MMABooksDB.GetConnection();

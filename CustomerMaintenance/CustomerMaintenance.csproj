@@ -128,6 +128,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="State.cs" />
+    <Compile Include="StateDB.cs" />
     <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>

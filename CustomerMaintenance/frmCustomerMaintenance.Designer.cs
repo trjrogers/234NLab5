@@ -145,6 +145,7 @@
             this.txtState.Size = new System.Drawing.Size(30, 20);
             this.txtState.TabIndex = 10;
             this.txtState.TabStop = false;
+            this.txtState.TextChanged += new System.EventHandler(this.txtState_TextChanged);
             // 
             // label6
             // 

@@ -42,7 +42,7 @@ namespace CustomerMaintenance
         {
             try
             {
-                //customer = CustomerDB.GetCustomer(customerID);
+                customer = CustomerDB.GetCustomer(customerID);
             }
             catch (Exception ex)
             {
@@ -116,18 +116,18 @@ namespace CustomerMaintenance
             {
                 try
                 {
-                    //if (!CustomerDB.DeleteCustomer(customer))
-                    //{
-                    //    MessageBox.Show("Another user has updated or deleted " +
-                    //        "that customer.", "Database Error");
-                    //    this.GetCustomer(customer.CustomerID);
-                    //    if (customer != null)
-                    //        this.DisplayCustomer();
-                    //    else
-                    //        this.ClearControls();
-                    //}
-                    //else
-                    //    this.ClearControls();
+                    if (!CustomerDB.DeleteCustomer(customer))
+                    {
+                        MessageBox.Show("Another user has updated or deleted " +
+                            "that customer.", "Database Error");
+                        this.GetCustomer(customer.CustomerID);
+                        if (customer != null)
+                            this.DisplayCustomer();
+                        else
+                            this.ClearControls();
+                    }
+                    else
+                        this.ClearControls();
                 }
                 catch (Exception ex)
                 {
@@ -139,6 +139,11 @@ namespace CustomerMaintenance
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtState_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
